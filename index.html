@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1b120d">
+  <meta name="description" content="Una historia para recordar que nunca has estado fuera del plan de Dios.">
+  <title>Una historia — Amistad Cristiana Mérida Poniente</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="experience" aria-label="Experiencia visual">
+    <div class="grain" aria-hidden="true"></div>
+
+    <!-- Pantalla inicial: la música comienza únicamente después de la interacción del usuario. -->
+    <section class="welcome" id="welcome" aria-label="Comenzar experiencia">
+      <div class="welcome-bg" aria-hidden="true"></div>
+      <div class="welcome-vignette" aria-hidden="true"></div>
+
+      <div class="welcome-content">
+        <p class="eyebrow">Una experiencia para ti</p>
+        <h1>Dale <em>Play</em></h1>
+        <p class="welcome-copy">y ameniza el momento.</p>
+
+        <button class="play-button" id="startButton" type="button" aria-label="Comenzar la historia y reproducir música">
+          <span class="play-icon" aria-hidden="true"></span>
+        </button>
+
+        <p class="tap-hint">Toca para comenzar</p>
+      </div>
+    </section>
+
+    <section class="story" id="story" aria-label="La historia" aria-hidden="true">
+      <div class="slides" id="slides">
+        <article class="slide is-active" data-index="0">
+          <img src="assets/historia-1.webp" alt="¿Por qué eres parte de la historia?" fetchpriority="high">
+        </article>
+        <article class="slide" data-index="1">
+          <img src="assets/historia-2.webp" alt="Una historia que comenzó mucho antes">
+        </article>
+        <article class="slide" data-index="2">
+          <img src="assets/historia-3.webp" alt="La historia de Jesús">
+        </article>
+        <article class="slide" data-index="3">
+          <img src="assets/historia-4.webp" alt="Tú siempre has sido parte de esta historia">
+        </article>
+        <article class="slide" data-index="4">
+          <img src="assets/historia-5.webp" alt="Por eso hoy agradecemos que seas parte de nuestra familia">
+        </article>
+        <article class="slide" data-index="5">
+          <img src="assets/historia-6.webp" alt="Jesús caminando hacia la luz, con un mensaje de paz y esperanza">
+        </article>
+      </div>
+
+      <div class="story-ui">
+        <div class="progress" id="progress" role="tablist" aria-label="Progreso de la historia"></div>
+
+        <button class="sound-button" id="soundButton" type="button" aria-label="Silenciar música">
+          <span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        </button>
+
+        <p class="swipe-hint" id="swipeHint">Desliza para continuar</p>
+      </div>
+    </section>
+
+    <section class="ending" id="ending" aria-label="Cierre">
+      <div class="ending-inner">
+        <span class="ending-line" aria-hidden="true"></span>
+        <p class="ending-kicker">Gracias por compartir este momento</p>
+        <h2>Que esta historia<br><em>también sea parte de la tuya.</em></h2>
+        <p class="ending-copy">Si quieres seguir cerca, encontrarnos o compartir tu experiencia, aquí nos tienes.</p>
+
+        <nav class="socials" aria-label="Redes y reseñas">
+          <a class="social" id="instagramLink" href="#" target="_blank" rel="noopener noreferrer">
+            <span class="social-icon" aria-hidden="true">◎</span>
+            <span>Instagram</span>
+          </a>
+          <a class="social" id="facebookLink" href="#" target="_blank" rel="noopener noreferrer">
+            <span class="social-icon social-f" aria-hidden="true">f</span>
+            <span>Facebook</span>
+          </a>
+          <a class="social social-review" id="reviewLink" href="#" target="_blank" rel="noopener noreferrer">
+            <span class="social-icon" aria-hidden="true">★</span>
+            <span>Califícanos</span>
+          </a>
+        </nav>
+
+        <p class="ending-signature">Amistad Cristiana · Mérida-Poniente</p>
+      </div>
+    </section>
+  </main>
+
+  <audio id="music" src="assets/musica.mp3" preload="auto" loop playsinline></audio>
+  <script src="script.js"></script>
+</body>
+</html>
