@@ -69,7 +69,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   inset: -3%;
   background:
     linear-gradient(180deg, rgba(20,10,5,.16), rgba(20,10,5,.48)),
-    url("assets/historia-1.webp") center center / cover no-repeat;
+    url("historia-1.webp") center center / cover no-repeat;
   filter: blur(2px);
   transform: scale(1.04);
   animation: welcomeZoom 12s ease-out forwards;
